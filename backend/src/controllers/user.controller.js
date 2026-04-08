@@ -28,7 +28,7 @@ const createUser = async (req, res) => {
             loggedIn: false
         });
 
-        res.status(201).json({
+        res.status(200).json({
             message: "User created successfully",
             user: {
                 id: newUser._id,
