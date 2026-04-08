@@ -1,5 +1,6 @@
 import { User } from "../models/user.model.js";
 
+// Use signup 
 const createUser = async (req, res) => {
     try {
         const { username, email, password } = req.body ?? {};
@@ -41,6 +42,7 @@ const createUser = async (req, res) => {
     } 
 };
 
+// User Login
 const loginUser = async (req, res) => {
     try {
         const { email, password } = req.body ?? {};
@@ -75,6 +77,7 @@ const loginUser = async (req, res) => {
     }
 };
 
+// User Logout
 const logoutUser = async (req, res) => {
     try {
         const { email } = req.body ?? {};
